@@ -1,0 +1,272 @@
+import React from "react";
+
+export default function DorabelleLanding() {
+  return (
+    <div className="min-h-screen bg-neutral-50 text-neutral-900">
+      {/* Header */}
+      <header className="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 border-b border-neutral-200">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+          <a href="#" className="flex items-center gap-2">
+            <div className="h-8 w-8 rounded-2xl bg-neutral-900" />
+            <span className="font-semibold tracking-tight">Dorabelle Marketing</span>
+          </a>
+          <nav className="hidden md:flex items-center gap-6 text-sm">
+            <a href="#aanbod" className="hover:text-neutral-600">Aanbod</a>
+            <a href="#werkwijze" className="hover:text-neutral-600">Werkwijze</a>
+            <a href="#prijzen" className="hover:text-neutral-600">Prijzen</a>
+            <a href="#faq" className="hover:text-neutral-600">FAQ</a>
+            <a href="#contact" className="inline-flex items-center rounded-xl border border-neutral-900 px-3 py-2 font-medium hover:bg-neutral-900 hover:text-white transition">Kennismaken</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.1]">
+              Duidelijke marketingstrategie voor <span className="underline decoration-neutral-300 underline-offset-4">kleine lokale ondernemers</span>
+            </h1>
+            <p className="mt-5 text-neutral-700 text-lg">
+              Ik neem het denkwerk uit handen en vertaal jouw doelen naar een concreet plan. Jij voert uit. Geen gedoe, wel richting.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href="#contact" className="inline-flex items-center rounded-xl bg-neutral-900 text-white px-5 py-3 font-medium hover:bg-neutral-800 transition">Plan een kennismaking</a>
+              <a href="#aanbod" className="inline-flex items-center rounded-xl border border-neutral-300 px-5 py-3 font-medium hover:border-neutral-900 transition">Bekijk het aanbod</a>
+            </div>
+            <ul className="mt-8 grid sm:grid-cols-3 gap-3 text-sm text-neutral-700">
+              <li className="rounded-xl bg-neutral-100 p-3">Strategie die past bij jouw bedrijf</li>
+              <li className="rounded-xl bg-neutral-100 p-3">Concreet plan in heldere stappen</li>
+              <li className="rounded-xl bg-neutral-100 p-3">Jij houdt de regie in de uitvoering</li>
+            </ul>
+          </div>
+          <div className="lg:pl-8">
+            <div className="aspect-[4/3] w-full rounded-3xl border border-neutral-200 bg-gradient-to-br from-neutral-100 to-neutral-200 grid place-items-center">
+              <div className="text-center px-10">
+                <p className="text-sm uppercase tracking-widest text-neutral-600">Case voorbeeld</p>
+                <h3 className="mt-2 text-2xl font-semibold">Van losse posts naar een simpel, werkend plan</h3>
+                <p className="mt-2 text-neutral-700">1 focus per maand · 2 kanalen · meetbaar resultaat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Proof bullets */}
+      <section className="py-12">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              {
+                title: "Heldere keuzes",
+                text: "We bepalen wat wél en niet te doen is. Geen tien dingen tegelijk.",
+              },
+              { title: "Concreet plan", text: "Je weet wat je wanneer doet — maandag t/m vrijdag helder." },
+              { title: "Meedenken op niveau", text: "Ik vertaal doelen naar praktische marketing die past." },
+            ].map((b, i) => (
+              <div key={i} className="rounded-2xl border border-neutral-200 bg-white p-6">
+                <h4 className="font-semibold">{b.title}</h4>
+                <p className="mt-2 text-neutral-700">{b.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Aanbod */}
+      <section id="aanbod" className="py-20 bg-white">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-semibold tracking-tight">Aanbod</h2>
+            <p className="mt-3 text-neutral-700">Ik werk als strategisch meedenker en coach. Jij voert uit, ik zorg voor richting, keuzes en structuur.</p>
+          </div>
+
+          <div className="mt-10 grid lg:grid-cols-2 gap-6">
+            <div className="rounded-3xl border border-neutral-200 p-8 bg-neutral-50">
+              <h3 className="text-2xl font-semibold">Marketing Buddy (abonnement)</h3>
+              <p className="mt-2 text-neutral-700">1–2 sessies per maand (±60 min). We bepalen de focus, maken het plan en stellen 3–5 concrete acties op. Tussendoor korte check-ins.</p>
+              <ul className="mt-4 space-y-2 text-neutral-800">
+                <li>• Duidelijke strategie per periode</li>
+                <li>• Simpel actieplan per week</li>
+                <li>• Jij houdt de uitvoering in eigen hand</li>
+              </ul>
+              <div className="mt-6 flex items-baseline gap-2">
+                <span className="text-3xl font-semibold">vanaf €295</span>
+                <span className="text-neutral-600">/ maand</span>
+              </div>
+              <a href="#contact" className="mt-6 inline-flex rounded-xl bg-neutral-900 text-white px-5 py-3 font-medium hover:bg-neutral-800 transition">Plan een kennismaking</a>
+            </div>
+
+            <div className="rounded-3xl border border-neutral-200 p-8 bg-white">
+              <h3 className="text-2xl font-semibold">Startpakket Strategie (eenmalig)</h3>
+              <p className="mt-2 text-neutral-700">Intake + 90-min strategiesessie + compact strategie-overzicht met keuzes, kanalen en eerste 4 weken plan.</p>
+              <ul className="mt-4 space-y-2 text-neutral-800">
+                <li>• Heldere positionering en doelen</li>
+                <li>• Keuzes: wat wél / niet</li>
+                <li>• 4-weeks content- en zichtbaarheidsplan</li>
+              </ul>
+              <div className="mt-6 flex items-baseline gap-2">
+                <span className="text-3xl font-semibold">€495</span>
+                <span className="text-neutral-600">eenmalig</span>
+              </div>
+              <a href="#contact" className="mt-6 inline-flex rounded-xl border border-neutral-900 px-5 py-3 font-medium hover:bg-neutral-900 hover:text-white transition">Vraag meer info</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Werkwijze */}
+      <section id="werkwijze" className="py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-semibold tracking-tight">Werkwijze</h2>
+            <p className="mt-3 text-neutral-700">Kort, logisch en uitvoerbaar. We kiezen, plannen en sturen bij.</p>
+          </div>
+          <ol className="mt-10 grid md:grid-cols-3 gap-6">
+            {[
+              {
+                step: "1",
+                title: "Doel & context",
+                text: "We brengen je situatie en doelen kort in kaart.",
+              },
+              { step: "2", title: "Kiezen", text: "We kiezen 1 duidelijke focus en 1–2 kanalen." },
+              { step: "3", title: "Plan", text: "Concreet actieplan voor 4 weken. Daarna evalueren we." },
+            ].map((s, i) => (
+              <li key={i} className="rounded-3xl border border-neutral-200 bg-white p-6">
+                <div className="h-10 w-10 rounded-xl bg-neutral-900 text-white grid place-items-center font-semibold">{s.step}</div>
+                <h4 className="mt-4 font-semibold">{s.title}</h4>
+                <p className="mt-2 text-neutral-700">{s.text}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* Prijzen */}
+      <section id="prijzen" className="py-20 bg-white">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-semibold tracking-tight">Prijzen</h2>
+            <p className="mt-3 text-neutral-700">Transparant en eenvoudig. Start klein en schaal op als het werkt.</p>
+          </div>
+          <div className="mt-10 grid md:grid-cols-3 gap-6">
+            {[
+              {
+                name: "Kennismaking",
+                price: "Gratis",
+                detail: "30 minuten. We kijken of het klikt en wat je nodig hebt.",
+                cta: "Plan een call",
+              },
+              {
+                name: "Buddy — 1x/maand",
+                price: "€295/mnd",
+                detail: "Maandelijkse strategiesessie + plan + check-in.",
+                cta: "Start hiermee",
+              },
+              {
+                name: "Buddy — 2x/maand",
+                price: "€425/mnd",
+                detail: "Twee sessies per maand voor meer tempo en focus.",
+                cta: "Kies dit",
+              },
+            ].map((p, i) => (
+              <div key={i} className="rounded-3xl border border-neutral-200 p-6 bg-neutral-50">
+                <h4 className="font-semibold">{p.name}</h4>
+                <p className="mt-3 text-3xl font-semibold">{p.price}</p>
+                <p className="mt-2 text-neutral-700">{p.detail}</p>
+                <a href="#contact" className="mt-6 inline-flex rounded-xl bg-neutral-900 text-white px-5 py-3 font-medium hover:bg-neutral-800 transition">{p.cta}</a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" className="py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-semibold tracking-tight">Veelgestelde vragen</h2>
+          </div>
+          <div className="mt-10 grid md:grid-cols-2 gap-6">
+            {[
+              {
+                q: "Werk je ook uitvoerend?",
+                a: "Nee. Ik denk mee, bepaal richting en maak het plan. Jij (of je team) voert uit.",
+              },
+              {
+                q: "Welke kanalen gebruik je?",
+                a: "Wat past bij jouw bedrijf: meestal Google/Maps en 1 social kanaal. We kiezen bewust.",
+              },
+              {
+                q: "Hoe snel zie ik resultaat?",
+                a: "Dat verschilt per bedrijf. We sturen elke 4 weken bij op basis van wat werkt.",
+              },
+              {
+                q: "Kunnen we eerst kennismaken?",
+                a: "Zeker. Plan een gratis call van 30 minuten om te kijken of dit past.",
+              },
+            ].map((f, i) => (
+              <div key={i} className="rounded-3xl border border-neutral-200 bg-white p-6">
+                <h4 className="font-semibold">{f.q}</h4>
+                <p className="mt-2 text-neutral-700">{f.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="py-20 bg-neutral-900 text-white">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-semibold tracking-tight">Contact</h2>
+            <p className="mt-3 text-neutral-200">Plan een kennismaking of stel je vraag. Ik reageer binnen 2 werkdagen.</p>
+          </div>
+
+          <div className="mt-10 grid lg:grid-cols-2 gap-8">
+            <form className="rounded-3xl bg-white text-neutral-900 p-6 space-y-4 border border-neutral-200">
+              <div>
+                <label className="text-sm font-medium">Naam</label>
+                <input type="text" placeholder="Jouw naam" className="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 outline-none focus:ring-2 focus:ring-neutral-900" />
+              </div>
+              <div>
+                <label className="text-sm font-medium">E-mail</label>
+                <input type="email" placeholder="jou@bedrijf.nl" className="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 outline-none focus:ring-2 focus:ring-neutral-900" />
+              </div>
+              <div>
+                <label className="text-sm font-medium">Bericht</label>
+                <textarea placeholder="Waar kan ik je mee helpen?" rows={5} className="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 outline-none focus:ring-2 focus:ring-neutral-900" />
+              </div>
+              <button type="submit" className="inline-flex rounded-xl bg-neutral-900 text-white px-5 py-3 font-medium hover:bg-neutral-800 transition">Versturen</button>
+              <p className="text-xs text-neutral-500">Door te versturen ga je akkoord met verwerking van je gegevens om je bericht te beantwoorden.</p>
+            </form>
+
+            <div className="rounded-3xl border border-neutral-800 p-8 bg-neutral-950">
+              <h3 className="text-xl font-semibold">Liever direct plannen?</h3>
+              <p className="mt-2 text-neutral-300">Voeg hier je Calendly-link toe of geef aan wanneer je bereikbaar bent.</p>
+              <div className="mt-6 grid gap-3">
+                <a href="#" className="inline-flex justify-center rounded-xl bg-white text-neutral-900 px-5 py-3 font-medium hover:bg-neutral-100 transition">Plan een gratis kennismaking</a>
+                <a href="mailto:hallo@dorabellemarketing.nl" className="inline-flex justify-center rounded-xl border border-neutral-700 px-5 py-3 font-medium hover:bg-neutral-800 transition">Mail: hallo@dorabellemarketing.nl</a>
+              </div>
+              <div className="mt-8 text-neutral-400 text-sm">
+                <p>Regio: lokaal, Nederland</p>
+                <p>KvK: vul je nummer hier in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-10">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-600">
+          <p>© {new Date().getFullYear()} Dorabelle Marketing. Alle rechten voorbehouden.</p>
+          <div className="flex items-center gap-4">
+            <a href="#" className="hover:text-neutral-900">Privacy</a>
+            <a href="#" className="hover:text-neutral-900">Algemene voorwaarden</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
